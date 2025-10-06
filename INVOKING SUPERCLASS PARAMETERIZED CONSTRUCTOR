@@ -1,0 +1,27 @@
+class A {
+    A(int x){
+      System.out.println("value of x in grand parent class"+x);
+    }
+}
+
+class B extends A {
+  B(int y){
+     super(y);
+      System.out.println("value of y in parent class"+y);
+    } 
+    
+}
+class C extends B{
+  C(int z){
+     super(z);
+      System.out.println("value of z in child class"+z);
+    } 
+    
+}
+
+public class MethodAccess {
+    public static void main(String[] args) {
+        C obj = new C(100);
+       
+    }
+}
