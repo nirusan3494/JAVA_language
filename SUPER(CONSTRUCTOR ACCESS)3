@@ -1,0 +1,20 @@
+class A {
+    A(){
+      System.out.println("hello from parent constructor");
+    }
+}
+
+class B extends A {
+  B(){
+      super();
+      System.out.println("hello from child constructor");
+    } 
+    
+}
+
+public class MethodAccess {
+    public static void main(String[] args) {
+        B obj = new B();
+       
+    }
+}
